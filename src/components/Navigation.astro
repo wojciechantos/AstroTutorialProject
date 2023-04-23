@@ -1,0 +1,13 @@
+---
+const navItems = [
+    {link: '/', label: 'Home'},
+    {link: '/about/', label: 'About'},
+    {link: '/blog/', label: 'Blog'},
+];
+---
+
+<div class="nav-links">
+    {navItems.map((item) =>
+            <a href={item.link}>{item.label}</a>
+    )}
+</div>
